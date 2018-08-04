@@ -390,6 +390,9 @@ label continue3:
     m "I hope everything went well with his trip."
     show melon normal at right
     m "No sad thoughts! Just happy ones. Calm down mel."
+    m "It said his flight landed 10 minutes ago..."
+    m "Where is he..."
+    m "Don't worry!!"
     m "He's going to walk through that door any moment an-"
     m "And-"
     show melon blush at right
