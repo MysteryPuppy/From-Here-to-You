@@ -5,7 +5,7 @@ From Here to You is a short visual novel made in [Ren'Py](https://www.renpy.org)
 Here are some previews of the game:
 
 ![alt text](https://github.com/lovebirdsnest/From-Here-to-You/blob/master/GameImages/1.png "Preview One")
-![alt text](https://github.com/lovebirdsnest/From-Here-to-You/blob/master/GameImages/2.png "Preview Two")
-![alt text](https://github.com/lovebirdsnest/From-Here-to-You/blob/master/GameImages/3.png "Preview Three")
+![alt text](https://github.com/lovebirdsnest/From-Here-to-You/blob/master/GameImages/3.png "Preview Two")
+![alt text](https://github.com/lovebirdsnest/From-Here-to-You/blob/master/GameImages/2.png "Preview Three")
 
 ##### Game still a work in progress
