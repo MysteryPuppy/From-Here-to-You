@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 108, in script
+    jump book
+ScriptError: could not find label 'book'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 108, in script
+    jump book
+  File "/Applications/renpy-7.0.0-sdk/renpy/ast.py", line 1600, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/Applications/renpy-7.0.0-sdk/renpy/script.py", line 873, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'book'.
+
+Darwin-17.5.0-x86_64-i386-64bit
+Ren'Py 7.0.0.196
+LDR 1.0
+Wed Aug  1 17:24:21 2018
