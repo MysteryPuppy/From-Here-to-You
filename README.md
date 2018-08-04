@@ -1,6 +1,6 @@
-# From Here to You
+# ✈️From Here to You ✈️
 
-From Here to You is a short visual novel made in [Ren'Py](https://www.renpy.org) about a long distance couple meeting again after months apart. This game was made with and for my boyfriend who is the most wonderful person in my life.
+From Here to You is a short visual novel made in [Ren'Py](https://www.renpy.org) about a long distance couple meeting again after months apart. This game was made with and for my boyfriend who is the most wonderful person in my life 💞
 
 Here are some previews of the game:
 
