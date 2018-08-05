@@ -2,9 +2,21 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 229: expected statement.
-    shoe kiwi psilly at left
-                     ^
+File "game/script.rpy", line 41: expected statement.
+    renpy.pause(4.0, hard=True)
+                               ^
+
+File "game/script.rpy", line 291: expected statement.
+    renpy.pause(4.0, hard=True)
+                               ^
+
+File "game/script.rpy", line 315: expected statement.
+    renpy.pause(4.0, hard=True)
+                               ^
+
+File "game/script.rpy", line 415: expected statement.
+    renpy.pause(4.0, hard=True)
+                               ^
 
 Ren'Py Version: Ren'Py 7.0.0.196
-Thu Aug  2 13:02:08 2018
+Sun Aug  5 05:19:29 2018

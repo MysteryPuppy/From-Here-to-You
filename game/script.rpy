@@ -38,7 +38,7 @@ label start:
     k "Okay okay, let's go."
 
     scene bg fewhours
-    pause 4
+    $ renpy.pause(4.0, hard=True)
 
     scene bg schoolbedroom
     show kiwi normal at left
@@ -288,7 +288,7 @@ label continue2:
     k "I love you too. More than anything."
 
     scene bg oneweek
-    pause 4
+    $ renpy.pause(4.0, hard=True)
     scene bg airportbedroom
 
     show kiwi normal at left
@@ -312,7 +312,7 @@ label continue2:
     k "Ah, gotta go."
     hide kiwi normal at left
     scene bg fewhours
-    pause 4
+    $ renpy.pause(4.0, hard=True)
     scene bg airportbedroom
     show melon sleep at right
     m "zzz...zzz..."
@@ -390,16 +390,17 @@ label continue3:
     m "I hope everything went well with his trip."
     show melon normal at right
     m "No sad thoughts! Just happy ones. Calm down mel."
+    show melon sad at right
     m "It said his flight landed 10 minutes ago..."
     m "Where is he..."
+    show melon normal at right
     m "Don't worry!!"
     m "He's going to walk through that door any moment an-"
     m "And-"
     show melon blush at right
     m "..."
-    m "..."
-    m "..."
-    m "..."
+    m "...."
+    m "....."
     scene bg end with fade
     show melon blush at right with vpunch
     show kiwi blush at left with vpunch
@@ -411,15 +412,58 @@ label continue3:
     m "You have no idea."
     k "No..I know melon, I know."
 
-    if happy == 4:
-        m "wow, you seem really happy these days!"
-    else:
-        m "I'm going to make you happier."
+    scene bg longhug
+    $ renpy.pause(4.0, hard=True)
 
     scene bg end
-    show melon blush at right
-    show kiwi blush at left
+    show kiwi normal at left
+    show melon normal at right
+    if dango==True:
+        m "Oh! By the way...I got you this..."
+        m "I hope you like it!"
+        m "It's a fluffy cat!"
+        show melon blush at right
+        m "Well- A picture of one!"
+        k "Aw...Melon."
+        k "I love it."
+        show kiwi blush at left
+        k "So much."
+        k "You always know how to make me smile."
+    else:
+        m "OH HECK"
+        k "What's wrong?"
+        show melon sad at right with vpunch
+        m "I forgot to bring your gift..."
+        k "Aww, melon that's okay!"
+        show kiwi blush at left
+        k "We're going home anyway"
+        show kiwi normal at left
+        show melon normal at right
+        m "I guess that's true..."
+        m "Just you wait! You're gonna love it!"
+        k "I know I will!"
 
+    if happy == 4:
+        k "You make me the happiest I've ever been."
+        show kiwi blush at left
+        show melon silly at right
+        m "That's the plan."
+    else:
+        m "Hey kiwi-"
+        m "I know things can be a little tough sometimes but.."
+        m "I'm going to do my best to make you the happiest person"
+        m "on this planet."
+        k "I don't doubt that at all."
+        show kiwi blush at left
+        show melon silly at right
+        k "You already make me insanely happy."
+
+    scene bg endend with fade
+    $ renpy.pause(4.0, hard=True)
+    scene bg credits with fade
+    $ renpy.pause(4.0, hard=True)
+    scene bg thanks with fade
+    $ renpy.pause(4.0, hard=True)
 # This ends the game.
 
     return
