@@ -2,21 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 41: expected statement.
-    renpy.pause(4.0, hard=True)
-                               ^
-
-File "game/script.rpy", line 291: expected statement.
-    renpy.pause(4.0, hard=True)
-                               ^
-
-File "game/script.rpy", line 315: expected statement.
-    renpy.pause(4.0, hard=True)
-                               ^
-
-File "game/script.rpy", line 415: expected statement.
-    renpy.pause(4.0, hard=True)
-                               ^
+File "game/script.rpy", line 206: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        k “Even though we were apart."
 
 Ren'Py Version: Ren'Py 7.0.0.196
-Sun Aug  5 05:19:29 2018
+Sun Aug  5 15:32:33 2018

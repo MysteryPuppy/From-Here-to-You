@@ -1,4 +1,4 @@
-﻿#From me to you
+#From me to you
 #Music from Jukedeck - create your own at http://jukedeck.com.
 
 define m = Character(_("Melon"), color="#FAA8D0")
@@ -11,7 +11,7 @@ label start:
     $ happy = 0
     $ dango = False
 
-    #play music "<loop 0>music/friends.ogg" fadein 2.0
+    play music "<loop 0>music/friends.ogg" fadein 2.0
 
     scene bg bedroom
     with fade
@@ -203,11 +203,11 @@ label continue1:
 label toomany:
     k "Hm..."
     k "I mean, it was a long time but I had fun every day with you."
-    k "Eventhough we were apart."
+    k "Even though we were apart."
     show kiwi pblush at left
     show melon pblush at right
     k "I just want to be able to talk to you and spend time with you."
-    k "And it's always worth it when we see eachother again."
+    k "And it's always worth it when we see each other again."
     k "So that's why I wouldn't say it's ever too much."
     m "Aw..Kiwi..."
     show melon pnormal at right
@@ -283,6 +283,7 @@ label continue2:
     m "Hey...Kiki.."
     k "Yes Melmel?"
     show melon pblush at right
+    stop music fadeout 2.0
     m "I love you."
     show kiwi pblush at left
     k "I love you too. More than anything."
@@ -293,6 +294,9 @@ label continue2:
 
     show kiwi normal at left
     show melon sleep at right
+
+    play music "<loop 0>music/friends.ogg" fadein 2.0
+
     k "Whew, it's pretty early..."
     k "Melon's probably still sleeping, hehe."
     k "I'll send her a text though before I get on the plane."
@@ -379,11 +383,15 @@ label continue3:
         m "Okay, I got the cat picture, my keys..."
         m "Mm! That's everything!"
     m "I'm good to go I think."
+    stop  music fadeout 2.0
     show melon silly at right
     m "Kiwi, here I come!"
 
     scene bg airport
     show melon normal at right
+
+    play music "<loop 0>music/waiting.ogg" fadein 2.0
+
     m "Waiting at the airport is always the hardest..."
     show melon sad at right
     m "I get so nervous..."
@@ -398,12 +406,14 @@ label continue3:
     m "He's going to walk through that door any moment an-"
     m "And-"
     show melon blush at right
+    stop  music fadeout 2.0
     m "..."
     m "...."
     m "....."
     scene bg end with fade
     show melon blush at right with vpunch
     show kiwi blush at left with vpunch
+    play music "<loop 0>music/desire.ogg" fadein 2.0
     m "KIWI!!"
     k "MELON!!!"
     scene bg together
@@ -457,6 +467,9 @@ label continue3:
         show kiwi blush at left
         show melon silly at right
         k "You already make me insanely happy."
+
+
+    stop  music fadeout 3.0
 
     scene bg endend with fade
     $ renpy.pause(4.0, hard=True)
